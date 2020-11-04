@@ -104,8 +104,26 @@ nav .empty {
 }
 
 main {
+    position: relative;
+    background-image: url("https://source.unsplash.com/GU5rGxIygNQ/1920x1508");
+    background-position: top right;
+    background-size: cover;
     text-align: center;
     padding: 3rem;
-    background-color: #171224;
+    /* background-color: #171224;*/
     height: 92vh;
+}
+
+main::before { /* Places an overlay on the banner section. Not sure I want it, though. */
+    position: absolute; 
+    top: 0;
+    left: 0;
+    height: 92vh;
+    width: 100%;
+    content: "";
+    background: #1712248c;
+}
+
+main h1 {
+    position: relative;
 }
