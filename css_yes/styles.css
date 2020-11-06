@@ -110,13 +110,13 @@ header .yes img {
 #category-list li {
     padding: 0 1rem;
     transition: all 0.5s;
-
 }
 
 #category-list a{
     color: white;
     text-decoration: none;
     font-size: 1rem;
+    list-style-type: none;
 }
 
 #category-list a:hover {
