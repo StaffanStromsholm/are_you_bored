@@ -1,101 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Are You bored?Yes</title>
-		<link rel="icon" type="image/png" href="img/favicon.ico" />
-		<!-- Main styles -->
-		<link rel="stylesheet" href="css/main.css" />
-		<!-- Component styles -->
-		<link rel="stylesheet" href="css/yes-selection.css" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Quantico&display=swap"
-			rel="stylesheet"
-		/>
-	</head>
-	<body>
-		<header>
-			<nav class="yes">
-				<h1>Are you bored?</h1>
-				<a href="#">
-					<img src="img/Group 9.png" alt="blue" />
-					<img src="img/Group 10.png" alt="red" />
-				</a>
-			</nav>
-		</header>
-		<main>
-			<h2>Books</h2>
-			<div class="yes_grid">
-				<div class="box">
-					<p>Top100</p>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Are You bored?Yes</title>
+	<link rel="icon" type="image/png" href="img/favicon.ico" />
+	<!-- Main styles -->
+	<link rel="stylesheet" href="css/main.css" />
+	<!-- Component styles -->
+	<link rel="stylesheet" href="css/yes-selection.css" />
+	<link rel="stylesheet" href="css/modal.css">
+	<link href="https://fonts.googleapis.com/css2?family=Quantico&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+	<header>
+		<nav class="yes">
+			<h1>Are you bored?</h1>
+			<a href="#">
+				<img src="img/Group 9.png" alt="blue" />
+				<img src="img/Group 10.png" alt="red" />
+			</a>
+		</nav>
+	</header>
+	<main>
+		<h2>Books</h2>
+		<div class="yes_grid">
+			<div class="box">
+				<p>Top100</p>
+			</div>
+			<div class="box">
+				<p>Top100</p>
+			</div>
+			<div class="box">
+				<p>Top100</p>
+			</div>
+			<div class="box">
+				<p>Top100</p>
+			</div>
+		</div>
+		<h2>Music</h2>
+		<div class="yes_grid">
+			<div class="box music">
+				<p>Rock</p>
+			</div>
+			<div class="box music">
+				<p>Pop</p>
+			</div>
+			<div class="box music">
+				<p>Jazz</p>
+			</div>
+			<div class="box music">
+				<p>Hiphop</p>
+			</div>
+		</div>
+		<h2>Movie</h2>
+		<div class="yes_grid">
+			<div class="box">
+				<p>Top100</p>
+			</div>
+			<div class="box">
+				<p>Top100</p>
+			</div>
+			<div class="box">
+				<p>Top100</p>
+			</div>
+			<div class="box">
+				<p>Top100</p>
+			</div>
+		</div>
+		<h2>News</h2>
+		<div class="yes_grid">
+			<div class="box">
+				<p>Top100</p>
+			</div>
+			<div class="box">
+				<p>Top100</p>
+			</div>
+			<div class="box">
+				<p>Top100</p>
+			</div>
+			<div class="box">
+				<p>Top100</p>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<h3>Team_4</h3>
+	</footer>
+	<!-- Spotify popup -->
+	<div id="category-popup" class="hide">
+		<button onclick="closePopup()">Close</button>
+		<ul id="category-list">
+		</ul>
+	</div>
+
+
+	<!-- HTML Structure for the modal -->
+	<div class="modal" id="modal">
+		<div class="modal-content">
+			<!-- Fetched Data can be displayed here -->
+			<div class="modal-body" id='modal-body'>
+				<!-- My news article example -->
+
+				<!-- Single article -->
+				<div class="article">
+					<img
+						src="https://ichef.bbci.co.uk/news/800/cpsprodpb/92A6/production/_115324573_31582988-018c-4d39-8a1b-e9490ebc29bb.png"
+						alt="" class="img-thumbnail">
+					<h4>
+						<a href="https://www.bbc.com/news/business-54849444" target="_blank">CEO Secrets: 'I became a chocolate
+							maker in lockdown'</a>
+					</h4>
 				</div>
-				<div class="box">
-					<p>Top100</p>
+				<!-- Single article -->
+				<div class="article">
+					<img
+						src="https://ichef.bbci.co.uk/news/800/cpsprodpb/1208F/production/_115217837_biden_harris_getty_976-2.jpg"
+						alt="" class="img-thumbnail">
+					<h4>
+						<a href="https://www.bbc.com/news/election-us-2020-54782631">US election results: Five reasons Biden
+							won</a>
+					</h4>
 				</div>
-				<div class="box">
-					<p>Top100</p>
+				<!-- single article -->
+				<div class="article">
+					<img
+						src="https://ichef.bbci.co.uk/news/800/cpsprodpb/92A6/production/_115324573_31582988-018c-4d39-8a1b-e9490ebc29bb.png"
+						alt="" class="img-thumbnail">
+					<h4>
+						<a href="https://www.bbc.com/news/business-54849444" target="_blank">CEO Secrets: 'I became a chocolate
+							maker in lockdown'</a>
+					</h4>
 				</div>
-				<div class="box">
-					<p>Top100</p>
+				<!-- single article -->
+				<div class="article">
+					<img
+						src="https://ichef.bbci.co.uk/news/800/cpsprodpb/1208F/production/_115217837_biden_harris_getty_976-2.jpg"
+						alt="" class="img-thumbnail">
+					<h4>
+						<a href="https://www.bbc.com/news/election-us-2020-54782631">US election results: Five reasons Biden
+							won</a>
+					</h4>
 				</div>
 			</div>
-			<h2>Music</h2>
-			<div class="yes_grid">
-				<div class="box music">
-					<p>Rock</p>
-				</div>
-				<div class="box music">
-					<p>Pop</p>
-				</div>
-				<div class="box music">
-					<p>Jazz</p>
-				</div>
-				<div class="box music">
-					<p>Hiphop</p>
-				</div>
-			</div>
-			<h2>Movie</h2>
-			<div class="yes_grid">
-				<div class="box">
-					<p>Top100</p>
-				</div>
-				<div class="box">
-					<p>Top100</p>
-				</div>
-				<div class="box">
-					<p>Top100</p>
-				</div>
-				<div class="box">
-					<p>Top100</p>
-				</div>
-			</div>
-			<h2>News</h2>
-			<div class="yes_grid">
-				<div class="box">
-					<p>Top100</p>
-				</div>
-				<div class="box">
-					<p>Top100</p>
-				</div>
-				<div class="box">
-					<p>Top100</p>
-				</div>
-				<div class="box">
-					<p>Top100</p>
-				</div>
-			</div>
-		</main>
-		<footer>
-			<h3>Team_4</h3>
-    </footer>
-    <div id="category-popup" class="hide">
-      <button onclick="closePopup()">Close</button>
-      <ul id="category-list">
-        
-      </ul>
-    </div>
-    
-    <script src="/js/script.js"></script>
-	</body>
+		</div>
+		<!-- Button for closing the modal -->
+		<div class="modal-footer">
+			<button type="button" class="btn" id='close-btn'>CLOSE</button>
+		</div>
+	</div>
+	</div>
+	<script src="/js/script.js"></script>
+</body>
+
 </html>
